@@ -1,0 +1,12 @@
+import os
+
+properties = open("text.txt",'rb+')
+lines = properties.readlines()
+d=""
+for line in lines:
+    c = line.replace("my name is abc", "my name is efg")
+    d += c
+    properties.seek(0)      #不要让python记住执行到这里，从文件头还始
+    properties.truncate()   #清空文件
+    properties.write(d)
+    properties.close()
