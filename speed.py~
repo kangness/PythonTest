@@ -1,0 +1,78 @@
+#!/usr/bin/env python
+#print "Hello World"
+str_seperator = "=================================================================================="
+timePointName = ["enter OpenNextImage at",#0
+                 "enter OpenImage at",#1
+                 "In OpenImage send On_ImageRefresh at",#2
+                 "leave OpenImage at",#3
+                 "leave OpenNextImage at",#4
+                 "enter LoadImage at",#5
+                 "decode began at",#6
+                 "enter DrawClient at",#7
+                 "leave DrawClient at",#8
+                 "decode end at",#9
+                 "in LoadImage send On_ImageRefresh at",#10
+                 "leave loadImage at",#11
+                 "second enter DrawClient at",#12
+                 "second leave DrawClient at" #13
+                 ]
+
+itemNumber= 0;
+avgTotal = 0; #13-0
+avgFirstDraw = 0; #8-2
+avgLoadImage = 0; #11-5
+avgSecondDraw = 0;#13-10
+
+fobj = open("log.txt","r")
+imageTimeSta = {}
+dic = {}
+path = ""
+idx = 0
+for line in fobj:
+        idx = idx + 1
+        if idx == 1:
+                line = line[3:]
+        else:
+                pass
+        
+        line = line.strip()
+        line = line.decode("utf-8").encode("gbk")
+        if line == str_seperator:
+                if path == "":
+                        pass
+                else:
+                        imageTimeSta[path] = dic
+                dic = {}
+                path = ""
+                continue
+
+        tabIndex = line.find('\t')
+        if tabIndex == -1:
+                path = line
+                print (path)
+                continue
+
+        tabLastIndex = line.rfind('\t')
+        name = line[0:tabIndex]
+        time = int(line[tabLastIndex + 1:])
+        if name in dic:
+                dic["second " + name] = time
+        else:
+                dic[name] = time
+
+fobj.close()
+itemNumber = len(imageTimeSta)
+keys = imageTimeSta.keys();
+for (k,dic) in imageTimeSta.iteritems():
+        avgTotal += dic[timePointName[13]] - dic[timePointName[0]];
+        avgFirstDraw += dic[timePointName[8]] - dic[timePointName[2]];
+        avgLoadImage += dic[timePointName[11]] - dic[timePointName[5]];
+        avgSecondDraw += dic[timePointName[13]] - dic[timePointName[10]];
+
+print ('avgTotal',avgTotal / float(itemNumber))
+print ('avgFirstDraw',avgFirstDraw / float(itemNumber))
+print ('avgLoadImage',avgLoadImage / float(itemNumber))
+print ('avgSecondDraw',avgSecondDraw / float(itemNumber))
+
+#print imageTimeSta
+

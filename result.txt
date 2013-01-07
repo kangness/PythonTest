@@ -1,0 +1,13 @@
+Type integers, each followed by Enter; or just Enter to finish
+integer:1
+integer:2
+integer:3
+integer:4
+integer:5
+integer:6
+integer:s
+invalid literal for int() with base 10: 's'
+integer:23
+integer:234
+integer:
+count =  8 total =  278 mean =  34.75

@@ -1,0 +1,165 @@
+﻿enter OpenNextImage at		5124
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\2.JPG
+enter OpenImage at		5124
+In OpenImage send On_ImageRefresh at		5124
+enter LoadImage at		5124
+leave OpenImage at		5124
+leave OpenNextImage at		5124
+decode began at		5124
+enter DrawClient at		5140
+leave DrawClient at		5155
+decode end at		5265
+in LoadImage send On_ImageRefresh at		5265
+leave loadImage at		5265
+enter DrawClient at		5280
+leave DrawClient at		5327
+==================================================================================
+enter OpenNextImage at		6280
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\3.JPG
+enter OpenImage at		6280
+In OpenImage send On_ImageRefresh at		6280
+enter LoadImage at		6280
+leave OpenImage at		6296
+leave OpenNextImage at		6296
+decode began at		6296
+enter DrawClient at		6296
+leave DrawClient at		6312
+decode end at		6437
+in LoadImage send On_ImageRefresh at		6437
+enter DrawClient at		6437
+leave loadImage at		6452
+leave DrawClient at		6499
+==================================================================================
+enter OpenNextImage at		7265
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\4.JPG
+enter OpenImage at		7265
+In OpenImage send On_ImageRefresh at		7265
+leave OpenImage at		7265
+leave OpenNextImage at		7265
+enter LoadImage at		7265
+decode began at		7265
+enter DrawClient at		7265
+leave DrawClient at		7296
+decode end at		7421
+in LoadImage send On_ImageRefresh at		7421
+enter DrawClient at		7421
+leave loadImage at		7437
+leave DrawClient at		7483
+==================================================================================
+enter OpenNextImage at		8062
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\5.JPG
+enter OpenImage at		8062
+In OpenImage send On_ImageRefresh at		8062
+leave OpenImage at		8062
+leave OpenNextImage at		8062
+enter LoadImage at		8062
+decode began at		8062
+enter DrawClient at		8062
+leave DrawClient at		8077
+decode end at		8202
+in LoadImage send On_ImageRefresh at		8202
+enter DrawClient at		8202
+leave DrawClient at		8265
+leave loadImage at		8280
+==================================================================================
+enter OpenNextImage at		8811
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\6.JPG
+enter OpenImage at		8811
+In OpenImage send On_ImageRefresh at		8811
+leave OpenImage at		8811
+leave OpenNextImage at		8811
+enter LoadImage at		8811
+decode began at		8811
+enter DrawClient at		8811
+leave DrawClient at		8843
+decode end at		8968
+in LoadImage send On_ImageRefresh at		8968
+leave loadImage at		8968
+enter DrawClient at		8968
+leave DrawClient at		9030
+==================================================================================
+enter OpenNextImage at		9515
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\7.JPG
+enter OpenImage at		9515
+In OpenImage send On_ImageRefresh at		9515
+leave OpenImage at		9515
+leave OpenNextImage at		9515
+enter LoadImage at		9515
+decode began at		9530
+enter DrawClient at		9530
+leave DrawClient at		9546
+decode end at		9671
+in LoadImage send On_ImageRefresh at		9671
+enter DrawClient at		9671
+leave loadImage at		9671
+leave DrawClient at		9733
+==================================================================================
+enter OpenNextImage at		10171
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\8.JPG
+enter OpenImage at		10171
+In OpenImage send On_ImageRefresh at		10171
+leave OpenImage at		10171
+leave OpenNextImage at		10171
+enter LoadImage at		10171
+decode began at		10186
+enter DrawClient at		10186
+leave DrawClient at		10202
+decode end at		10311
+in LoadImage send On_ImageRefresh at		10311
+leave loadImage at		10311
+enter DrawClient at		10311
+leave DrawClient at		10374
+==================================================================================
+enter OpenNextImage at		10811
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\9.JPG
+enter OpenImage at		10811
+In OpenImage send On_ImageRefresh at		10811
+enter LoadImage at		10811
+leave OpenImage at		10811
+leave OpenNextImage at		10811
+enter DrawClient at		10811
+decode began at		10811
+leave DrawClient at		10843
+decode end at		10952
+in LoadImage send On_ImageRefresh at		10952
+leave loadImage at		10952
+enter DrawClient at		10952
+leave DrawClient at		11030
+==================================================================================
+enter OpenNextImage at		11452
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\10.JPG
+enter OpenImage at		11452
+In OpenImage send On_ImageRefresh at		11452
+leave OpenImage at		11452
+leave OpenNextImage at		11452
+enter LoadImage at		11452
+decode began at		11452
+enter DrawClient at		11468
+leave DrawClient at		11483
+decode end at		11593
+in LoadImage send On_ImageRefresh at		11593
+enter DrawClient at		11593
+leave loadImage at		11608
+leave DrawClient at		11655
+==================================================================================
+enter OpenNextImage at		12077
+enter DrawClient at		12077
+leave DrawClient at		12108
+==================================================================================
+enter OpenNextImage at		13124
+D:\pics\测试图片\解码性能对比用图\jpeg\较小图\1.jpg
+enter OpenImage at		13124
+In OpenImage send On_ImageRefresh at		13124
+leave OpenImage at		13124
+leave OpenNextImage at		13124
+enter LoadImage at		13124
+decode began at		13124
+enter DrawClient at		13139
+leave DrawClient at		13155
+decode end at		13358
+in LoadImage send On_ImageRefresh at		13358
+leave loadImage at		13358
+enter DrawClient at		13358
+leave DrawClient at		13405
+==================================================================================
+

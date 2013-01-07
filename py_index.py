@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+def extract_from_tag1(tag,line):
+	opener = "<"+tag+">"
+	closeer = "</"+tag+">"
+	try:
+		i = line.index(opener)
+		start = i +len(opener)
+		j = line.index(closeer)
+		return line[start:j]
+	except ValueError :
+		return None
+
+
+def extract_from_tag2(tag,line):
+	opener = "<"+tag+">"
+	closeer = "</"+tag+">"
+	i = line.index(opener)
+	if i!=-1:
+		start = i+len(opener)
+		j = line.find(closeer,start)
+		if j!=-1:
+			return line[start:j]
+		return None
+
+print(extract_from_tag1("red","what one <red> rose </red> this is"))
+
+print(extract_from_tag2("red","what two <red> roses </red> this is"))
